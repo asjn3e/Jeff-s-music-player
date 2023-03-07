@@ -1,6 +1,13 @@
 import React, { Component } from "react";
 
-function Library({ songs, setSongs, currentSong, setCurrentSong }) {
+function Library({
+  songs,
+  setSongs,
+  currentSong,
+  setCurrentSong,
+  isLibraryActive,
+}) {
+  console.log(isLibraryActive);
   const changeSong = (newSong) => {
     console.log("hello");
     const newSongs = [...songs];
@@ -12,7 +19,7 @@ function Library({ songs, setSongs, currentSong, setCurrentSong }) {
     setCurrentSong(newSong);
   };
   return (
-    <div className="library">
+    <div className={`library ${isLibraryActive ? "active" : ""}`}>
       <h1>Library</h1>
       <ul className="library__list">
         {songs.map((song) => {
