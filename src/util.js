@@ -7,7 +7,7 @@ export const tracks = [
     title: "Bad Habits",
     source: "/tracks/1_1 - Bad Habits - Ed Sheeran (320).mp3",
     uuid: uuidv4(),
-    active: false,
+    active: true,
   },
   {
     cover: "/tracks/1_1 - Be Together - BCBC (320).jpg",
@@ -194,6 +194,7 @@ export const tracks = [
     cover:
       "/tracks/1_1_Outside_feat_Ellie_Goulding_Calvin_Harris_Ellie_Goulding_320.jpg",
     artist: "1_1_Outside_feat_Ellie_Goulding_Calvin_Harris_Ellie_Goulding_320",
+    title: "Outside",
     source:
       "/tracks/1_1_Outside_feat_Ellie_Goulding_Calvin_Harris_Ellie_Goulding_320.mp3",
     uuid: uuidv4(),
@@ -324,22 +325,6 @@ export const tracks = [
     cover: "/tracks/Chetori Mishe  Tataloo.jpg",
     artist: "Chetori Mishe  Tataloo",
     source: "/tracks/Chetori Mishe  Tataloo.mp3",
-    uuid: uuidv4(),
-    active: false,
-  },
-  {
-    cover: "/tracks/null",
-    artist: "Macklemore, Ryan Lewis feat. Ray Dalton",
-    title: "Cant Hold Us (feat",
-    source:
-      "/tracks/Macklemore, Ryan Lewis feat. Ray Dalton-Cant Hold Us (feat.mp3",
-    uuid: uuidv4(),
-    active: false,
-  },
-  {
-    cover: "/tracks/null",
-    artist: "Macklemore_Ryan_Lewis_Feat_Ray_Dalton",
-    source: "/tracks/Macklemore_Ryan_Lewis_Feat_Ray_Dalton.mp3",
     uuid: uuidv4(),
     active: false,
   },

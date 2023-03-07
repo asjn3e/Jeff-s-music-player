@@ -27,6 +27,9 @@ function Controler({
     }
   };
   const timerHandler = (e) => {
+    if (isPlaying) {
+      audioRef.current.play();
+    }
     setSongDetails({
       ...songDetails,
       duration: e.target.duration,
@@ -54,7 +57,10 @@ function Controler({
       </div>
       <div className="controler__controls">
         <FontAwesomeIcon icon={faAngleLeft} />
-        <FontAwesomeIcon onClick={playSongHandler} icon={faPlay} />
+        <FontAwesomeIcon
+          onClick={playSongHandler}
+          icon={isPlaying ? faPause : faPlay}
+        />
         <FontAwesomeIcon icon={faShuffle} />
         <FontAwesomeIcon icon={faAngleRight} />
       </div>

@@ -4,9 +4,10 @@ import Song from "./components/Song";
 import Controler from "./components/Controler";
 import { tracks } from "./util";
 import "./style/style.scss";
+import Library from "./components/Library";
 function App() {
   const [songs, setSongs] = useState(tracks);
-  const [currentSong, setCurrentSong] = useState(tracks[0]);
+  const [currentSong, setCurrentSong] = useState(songs[0]);
   const [isPlaying, setIsPlaying] = useState(false);
   const [songDetails, setSongDetails] = useState({
     currentTime: 0,
@@ -23,6 +24,12 @@ function App() {
         songDetails={songDetails}
         setSongDetails={setSongDetails}
       ></Controler>
+      <Library
+        songs={songs}
+        setSongs={setSongs}
+        currentSong={currentSong}
+        setCurrentSong={setCurrentSong}
+      ></Library>
     </>
   );
 }

@@ -8,15 +8,37 @@
         width: 50%;
         
         display: flex;
-        background-color: lightblue;
+        
         justify-content: center;
         align-items: center;
         input{
-            padding:1rem 0;
-            width: 100%;
+            -webkit-appearance: none;
+            // overflow: hidden;
+            // padding:1rem 0;
+            width: 80%;
+            // border: 1px solid #000;
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+        }
+        input::-webkit-slider-thumb{
+            -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: rgb(0, 0, 0);
+    
+        }
+        input:hover::-webkit-slider-runnable-track {
+            background: #ccc;
+            border-radius: 10px;
         }
         p{
-            padding: 1rem 2rem;
+            padding: 1rem 0rem;
+            text-align: center;
+            width: 10%;
         }
         
     }

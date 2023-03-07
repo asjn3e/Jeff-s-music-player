@@ -5,10 +5,19 @@
     justify-content: space-evenly;
     min-height: 60vh;
     .song__cover{
-        max-width: 25%;
+        max-width: 20%;
     }
     img{
         border-radius: 50%;
         width: 100%;
+        
+    }
+    .song__title{
+        font-weight: bold;
+        font-size: 1.8rem;
+    }
+    .song__artist{
+        font-weight: 500;
+        font-size: 1rem;
     }
 }
