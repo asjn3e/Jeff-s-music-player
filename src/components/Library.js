@@ -7,7 +7,6 @@ function Library({
   setCurrentSong,
   isLibraryActive,
 }) {
-  console.log(isLibraryActive);
   const changeSong = (newSong) => {
     console.log("hello");
     const newSongs = [...songs];

@@ -321,13 +321,6 @@ export const tracks = [
     uuid: uuidv4(),
     active: false,
   },
-  {
-    cover: "/tracks/Chetori Mishe  Tataloo.jpg",
-    artist: "Chetori Mishe  Tataloo",
-    source: "/tracks/Chetori Mishe  Tataloo.mp3",
-    uuid: uuidv4(),
-    active: false,
-  },
 ];
 
 //seconds to minutes converter

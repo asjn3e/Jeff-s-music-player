@@ -24,7 +24,10 @@ function App() {
       />
       <Song currentSong={currentSong}></Song>
       <Controler
+        songs={songs}
+        setSongs={setSongs}
         currentSong={currentSong}
+        setCurrentSong={setCurrentSong}
         isPlaying={isPlaying}
         setIsPlaying={setIsPlaying}
         songDetails={songDetails}
