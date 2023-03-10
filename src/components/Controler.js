@@ -68,6 +68,14 @@ function Controler({
     setSongs(newSongs);
     setCurrentSong(newSong);
   };
+  const shuffleUp = () => {
+    const newSongs = [...songs];
+    for (let i = newSongs.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [newSongs[i], newSongs[j]] = [newSongs[j], newSongs[i]];
+    }
+    setSongs(newSongs);
+  };
   return (
     <div className="controler">
       <div className="controler__time">
@@ -92,7 +100,7 @@ function Controler({
           onClick={playSongHandler}
           icon={isPlaying ? faPause : faPlay}
         />
-        <FontAwesomeIcon icon={faShuffle} />
+        <FontAwesomeIcon icon={faShuffle} onClick={shuffleUp} />
         <FontAwesomeIcon
           icon={faAngleRight}
           onClick={() => skipHandler("next-track")}
