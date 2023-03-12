@@ -325,6 +325,9 @@ export const tracks = [
 
 //seconds to minutes converter
 export function timeConverter(time) {
+  if (!time) {
+    return "0:00";
+  }
   return `${Math.floor(time / 60)}:${
     Math.floor(time % 60) < 10 ? "0" : ""
   }${Math.floor(time % 60)}`;

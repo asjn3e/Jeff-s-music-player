@@ -6,7 +6,7 @@ function Navbar({ isLibraryActive, setIsLibraryActive }) {
   };
   return (
     <nav className="nav">
-      <h1 className="nav__title">asjn3e's music player</h1>
+      <h1 className="nav__title">asjn3e's player</h1>
       <button className="nav__library-button" onClick={libraryHandler}>
         Library
       </button>

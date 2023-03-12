@@ -22,3 +22,38 @@
         }
     }
 }
+@media screen and (min-width:768px) and (max-width:1366px) {
+    .nav{
+        
+        margin: 3rem 0 0 0;
+        align-items: center;
+        
+        .nav__title{
+            font-weight: 900;
+            font-size: 1.5rem;
+        }
+        .nav__library-button{
+            
+            font-weight: 700;
+            
+        }
+    }
+}
+@media screen and (max-width:767px) {
+    .nav{
+        
+        margin: 3rem 0 0 0;
+        align-items: center;
+        
+        .nav__title{
+            font-weight: 900;
+            font-size: 1rem;
+        }
+        .nav__library-button{
+            
+            font-weight: 600;
+            padding: .3rem .7rem;
+            font-size: .8rem;
+        }
+    }
+}

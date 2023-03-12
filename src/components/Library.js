@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faClose } from "@fortawesome/free-solid-svg-icons";
 
 function Library({
   songs,
@@ -6,7 +8,9 @@ function Library({
   currentSong,
   setCurrentSong,
   isLibraryActive,
+  setIsLibraryActive,
 }) {
+ 
   const changeSong = (newSong) => {
     console.log("hello");
     const newSongs = [...songs];
@@ -17,9 +21,26 @@ function Library({
     setSongs(newSongs);
     setCurrentSong(newSong);
   };
+  const closeLibrary = () => {
+    setIsLibraryActive(false);
+  };
+  const handleDragStart = (e) => {
+    setIsLibraryActive(false);
+  };
+
   return (
-    <div className={`library ${isLibraryActive ? "active" : ""}`}>
-      <h1>Library</h1>
+    <div
+      onDragStart={handleDragStart}
+      draggable={true}
+      className={`library ${isLibraryActive ? "active" : ""}`}
+    >
+      <div className="library__heading">
+        <h1>Library</h1>
+        <button onClick={closeLibrary} className="library__btn">
+          <FontAwesomeIcon icon={faClose} />
+        </button>
+      </div>
+
       <ul className="library__list">
         {songs.map((song) => {
           return (

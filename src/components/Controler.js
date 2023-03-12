@@ -79,13 +79,13 @@ function Controler({
   return (
     <div className="controler">
       <div className="controler__time">
-        <p className="">{timeConverter(songDetails.currentTime)}</p>
+        <p className="">{timeConverter(songDetails.currentTime) }</p>
         <input
           type="range"
           onChange={dragHandler}
           value={songDetails.currentTime}
           min={0}
-          max={songDetails.duration}
+          max={songDetails.duration || 100}
           name=""
           id=""
         />

@@ -52,3 +52,106 @@
     }
 }
 }
+@media screen and (min-width:768px) and (max-width:1366px) {
+    .controler{
+        min-height: 15vh;
+        
+       
+        
+        
+        .controler__time{
+            width: 70%;
+            
+          
+            input{
+                -webkit-appearance: none;
+                // overflow: hidden;
+                // padding:1rem 0;
+                width: 80%;
+                // border: 1px solid #000;
+        height: 5px;
+        background: #ddd;
+        border: none;
+        border-radius: 3px;
+            }
+            input::-webkit-slider-thumb{
+                -webkit-appearance: none;
+        border: none;
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        background: rgb(0, 0, 0);
+        
+            }
+         
+            input:focus::-webkit-slider-runnable-track {
+               
+            }
+           p{
+              
+            } 
+            
+        }
+    .controler__controls{
+        width: 35%;
+        display: flex;
+        justify-content: space-between;
+        svg{
+            cursor: pointer;
+            font-size: 2rem;
+        }
+    }
+    }
+}
+@media screen and (max-width:768px) {
+    .controler{
+        min-height: 12vh;
+        
+       
+        
+        
+        .controler__time{
+            width: 100%;
+            
+          
+            input{
+                -webkit-appearance: none;
+                // overflow: hidden;
+                // padding:1rem 0;
+                width:65%;
+                // border: 1px solid #000;
+        height: 5px;
+        background: #ddd;
+        border: none;
+        border-radius: 3px;
+            }
+            input::-webkit-slider-thumb{
+                -webkit-appearance: none;
+        border: none;
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background: rgb(0, 0, 0);
+        
+            }
+         
+            input:focus::-webkit-slider-runnable-track {
+               
+            }
+           p{
+              font-size: .7rem;
+              margin: 0 .5rem;
+            } 
+            
+        }
+    .controler__controls{
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        svg{
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+    }
+    }
+}

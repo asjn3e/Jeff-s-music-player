@@ -14,7 +14,7 @@ function App() {
     currentTime: 0,
     duration: 0,
   });
-  const [isLibraryActive, setIsLibraryActive] = useState(true);
+  const [isLibraryActive, setIsLibraryActive] = useState(false);
 
   return (
     <>
@@ -39,6 +39,7 @@ function App() {
         currentSong={currentSong}
         setCurrentSong={setCurrentSong}
         isLibraryActive={isLibraryActive}
+        setIsLibraryActive={setIsLibraryActive}
       />
     </>
   );

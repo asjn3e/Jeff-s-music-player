@@ -21,3 +21,45 @@
         font-size: 1rem;
     }
 }
+@media screen and (min-width:768px) and (max-width:1366px) {
+    .song{
+        min-height: 60vh;
+        .song__cover{
+            max-width: 50%;
+        }
+        img{
+            border-radius: 50%;
+            width: 100%;
+            
+        }
+        .song__title{
+            font-weight: bold;
+            font-size: 2rem;
+        }
+        .song__artist{
+            font-weight: 500;
+            font-size: 1rem;
+        }
+    }
+}
+@media screen and (max-width:767px) {
+    .song{
+        min-height: 60vh;
+        .song__cover{
+            max-width: 55%;
+        }
+        img{
+            border-radius: 50%;
+            width: 100%;
+            
+        }
+        .song__title{
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .song__artist{
+            font-weight: 500;
+            font-size: .8rem;
+        }
+    }
+}
